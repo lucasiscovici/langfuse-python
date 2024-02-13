@@ -319,8 +319,8 @@ files = [
 jmespath = ">=0.7.1,<2.0.0"
 python-dateutil = ">=2.1,<3.0.0"
 urllib3 = [
-    {version = ">=1.25.4,<1.27", markers = "python_version < \"3.10\""},
     {version = ">=1.25.4,<2.1", markers = "python_version >= \"3.10\""},
+    {version = ">=1.25.4,<1.27", markers = "python_version < \"3.10\""},
 ]
 
 [package.extras]
@@ -973,12 +973,12 @@ files = [
 google-auth = ">=2.14.1,<3.0.dev0"
 googleapis-common-protos = ">=1.56.2,<2.0.dev0"
 grpcio = [
-    {version = ">=1.33.2,<2.0dev", optional = true, markers = "python_version < \"3.11\" and extra == \"grpc\""},
     {version = ">=1.49.1,<2.0dev", optional = true, markers = "python_version >= \"3.11\" and extra == \"grpc\""},
+    {version = ">=1.33.2,<2.0dev", optional = true, markers = "python_version < \"3.11\" and extra == \"grpc\""},
 ]
 grpcio-status = [
-    {version = ">=1.33.2,<2.0.dev0", optional = true, markers = "python_version < \"3.11\" and extra == \"grpc\""},
     {version = ">=1.49.1,<2.0.dev0", optional = true, markers = "python_version >= \"3.11\" and extra == \"grpc\""},
+    {version = ">=1.33.2,<2.0.dev0", optional = true, markers = "python_version < \"3.11\" and extra == \"grpc\""},
 ]
 protobuf = ">=3.19.5,<3.20.0 || >3.20.0,<3.20.1 || >3.20.1,<4.21.0 || >4.21.0,<4.21.1 || >4.21.1,<4.21.2 || >4.21.2,<4.21.3 || >4.21.3,<4.21.4 || >4.21.4,<4.21.5 || >4.21.5,<5.0.0.dev0"
 requests = ">=2.18.0,<3.0.0.dev0"
@@ -1843,18 +1843,19 @@ types-requests = ">=2.31.0,<3.0.0"
 
 [[package]]
 name = "langchain-mistralai"
-version = "0.0.3"
+version = "0.0.4"
 description = "An integration package connecting Mistral and LangChain"
 optional = false
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "langchain_mistralai-0.0.3-py3-none-any.whl", hash = "sha256:ebb8ba3d7978b5ee16f7e09512ffa434e00bc9863f1537f1a5f5203882d99619"},
-    {file = "langchain_mistralai-0.0.3.tar.gz", hash = "sha256:2e45ee0118df8e4b5577ce8c4f89743059801e473f40a8b7c89cb99dd715f423"},
+    {file = "langchain_mistralai-0.0.4-py3-none-any.whl", hash = "sha256:595f78338778cc9846a3d338e24fb0a21092150c3aa0684d007129a13b938a0e"},
+    {file = "langchain_mistralai-0.0.4.tar.gz", hash = "sha256:5c17671e30a6cee0059a0e0c725e2a137941877b058ce57569f73f5cf37b72ad"},
 ]
 
 [package.dependencies]
 langchain-core = ">=0.1,<0.2"
 mistralai = ">=0.0.11,<0.0.12"
+tokenizers = ">=0.15.1,<0.16.0"
 
 [[package]]
 name = "langchain-openai"
@@ -4399,4 +4400,4 @@ langchain = ["langchain"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8.1,<4.0"
-content-hash = "406a76d56eb5c93058984ae0520d6d64bb460273b748f2884e2dee0907134441"
+content-hash = "6440599362991374f1c94ceaff5cfe870feeb8c67ecf10e3bb2936675fbe5d01"
